@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y sway-config-fedora greetd greetd-selinux greetd-fakegreet tuigreet
+dnf install -y sway-config-fedora greetd greetd-selinux tuigreet @swaywm-extended
 
 # Use a COPR Example:
 #
@@ -22,4 +22,5 @@ dnf install -y sway-config-fedora greetd greetd-selinux greetd-fakegreet tuigree
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
-systemctl enable greetd
+systemctl disable sddm.service
+systemctl enable greetd.service
