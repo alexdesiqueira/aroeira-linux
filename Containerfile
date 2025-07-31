@@ -23,6 +23,9 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/tmp \
     /ctx/build.sh && \
     ostree container commit
+
+# Ensure /var/run is a symlink to /run
+RUN rm -rf /var/run && ln -s /run /var/run
     
 ### LINTING
 ## Verify final image and contents are correct.
