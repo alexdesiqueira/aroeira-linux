@@ -26,7 +26,10 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 
 # Ensure /var/run is a symlink to /run
 RUN rm -rf /var/run && ln -s /run /var/run
-    
+
+# Cleaning up the DNF cache
+RUN dnf clean all
+
 ### LINTING
 ## Verify final image and contents are correct.
 RUN bootc container lint
