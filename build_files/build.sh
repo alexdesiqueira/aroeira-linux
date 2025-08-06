@@ -22,3 +22,4 @@ dnf install -y sway-config-fedora @swaywm-extended
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
+systemctl enable sddm.service
