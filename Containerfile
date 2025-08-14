@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Copying settings
-COPY config/etc/ /etc/
+COPY config /
 
 # Base Image
 FROM ghcr.io/ublue-os/base-main:latest
