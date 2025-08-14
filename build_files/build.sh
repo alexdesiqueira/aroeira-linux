@@ -2,6 +2,7 @@
 
 set -ouex pipefail
 
+# Copying configuration
 rsync -Pavu /ctx/etc /
 
 ### Install packages
@@ -12,7 +13,7 @@ rsync -Pavu /ctx/etc /
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y sway-config-fedora @swaywm-extended evince gammastep gnome-disk-utility greetd greetd-selinux tuigreet simple-scan syncthing transmission udiskie
+dnf install -y sway-config-fedora @swaywm-extended evince gammastep gnome-disk-utility greetd greetd-selinux tuigreet simple-scan syncthing transmission udiskie insync
 
 # Use a COPR Example:
 #
