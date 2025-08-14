@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-cp -vr /ctx/etc/ /etc/
+rsync -Pavu /ctx/etc /
 
 ### Install packages
 
