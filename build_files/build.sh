@@ -2,6 +2,10 @@
 
 set -ouex pipefail
 
+
+
+cp -vr /ctx/config/etc/ /etc/
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
