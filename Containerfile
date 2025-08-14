@@ -30,6 +30,8 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
 # Ensure /var/run is a symlink to /run
 RUN rm -rf /var/run && ln -s /run /var/run
 
+RUN dnf remove firefox firefox-langpacks
+
 # Cleaning up the DNF cache
 RUN dnf clean all
 
