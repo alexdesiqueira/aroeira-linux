@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-cp -vr /ctx/etc/ /etc
+cp -vr /ctx/etc/ /etc/
 
 ### Install packages
 
