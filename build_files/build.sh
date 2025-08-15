@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y sway-config-fedora @swaywm-extended evince gammastep gnome-disk-utility greetd greetd-selinux tuigreet simple-scan syncthing transmission udiskie insync
+dnf install -y sway-config-fedora @swaywm-extended evince gammastep gnome-disk-utility greetd greetd-selinux tuigreet simple-scan syncthing transmission udiskie dunst
 
 # Use a COPR Example:
 #
@@ -21,6 +21,8 @@ dnf install -y sway-config-fedora @swaywm-extended evince gammastep gnome-disk-u
 
 # Copying configuration
 rsync -Pavu /ctx/etc /
+
+dnf install -y insync
 
 #### Example for enabling a System Unit File
 
