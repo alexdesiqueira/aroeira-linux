@@ -2,9 +2,6 @@
 
 set -ouex pipefail
 
-# Copying configuration
-rsync -Pavu /ctx/etc /
-
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -21,6 +18,9 @@ dnf install -y sway-config-fedora @swaywm-extended evince gammastep gnome-disk-u
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+
+# Copying configuration
+rsync -Pavu /ctx/etc /
 
 #### Example for enabling a System Unit File
 
