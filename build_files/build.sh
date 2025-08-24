@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y sway-config-fedora @swaywm-extended evince gammastep gnome-disk-utility greetd greetd-selinux tuigreet simple-scan syncthing transmission udiskie dunst
+dnf install -y sway-config-fedora @swaywm-extended evince gammastep gnome-disk-utility greetd greetd-selinux tuigreet simple-scan syncthing transmission udiskie dunst xed eog eog-plugins totem atril gthumb
 
 # Use a COPR Example:
 #
