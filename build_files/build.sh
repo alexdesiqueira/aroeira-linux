@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y @cosmic-desktop-environment sway-config-fedora @swaywm-extended gammastep gnome-disk-utility greetd greetd-selinux tuigreet simple-scan syncthing transmission udiskie dunst xed eog eog-plugins totem atril gthumb zathura zathura-cb zathura-djvu zathura-ps zathura-pdf-mupdf ranger power-profiles-daemon
+dnf install -y sway-config-fedora @swaywm-extended gammastep gnome-disk-utility greetd greetd-selinux tuigreet simple-scan syncthing transmission udiskie dunst xed eog eog-plugins totem atril gthumb zathura zathura-cb zathura-djvu zathura-ps zathura-pdf-mupdf ranger power-profiles-daemon
 
 # Use a COPR Example:
 #
@@ -29,5 +29,5 @@ systemctl enable podman.socket
 
 #### systemd services
 systemctl disable sddm.service
-#systemctl enable greetd.service
+systemctl enable greetd.service
 systemctl enable power-profiles-daemon.service
