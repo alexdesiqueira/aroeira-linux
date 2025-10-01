@@ -29,5 +29,5 @@ systemctl enable podman.socket
 
 #### systemd services
 systemctl disable sddm.service
-systemctl enable greetd.service
+#systemctl enable greetd.service
 systemctl enable power-profiles-daemon.service
