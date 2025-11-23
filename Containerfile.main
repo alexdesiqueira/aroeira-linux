@@ -2,7 +2,7 @@
 ARG IMAGE_NAME="base"
 ARG SOURCE_SUFFIX="main"
 ARG SOURCE_IMAGE="${IMAGE_NAME}-${SOURCE_SUFFIX}"
-ARG SOURCE_TAG="gts"
+ARG SOURCE_TAG="latest"
 ARG BASE_IMAGE="ghcr.io/ublue-os/${SOURCE_IMAGE}"
 
 # Allow build scripts to be referenced without being copied into the final image
